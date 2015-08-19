@@ -16,6 +16,8 @@
 }
 .time{
 	padding-top: 100px;
+	font-family: "digital clock font";
+	font-size: 200px;
 }
 
 .pause-start-button{
@@ -24,4 +26,25 @@
 
 .row{
  	padding-top: 50px;
+}
+
+.containing-div{
+	width: 768px;
+	margin: auto;
+}
+
+.mode{
+	font-size: 150px;
+	font-family: Roboto;
+}
+@font-face {
+    font-family: "digital clock font";
+    src: url(alarm_clock.ttf) format("truetype");
+}
+
+body{
+	background: url(https://images.unsplash.com/photo-1437422061949-f6efbde0a471?fit=crop&fm=jpg&q=80&w=1050) 
+	no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
