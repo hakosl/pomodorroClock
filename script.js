@@ -3,8 +3,8 @@ var countDown = function(time, type){
   if(currentIntervalId){
     clearInterval(currentIntervalId)
   }
-
   $(".mode").text(type)
+
   currentIntervalId = setInterval(function(){
     time--;
 
@@ -21,6 +21,12 @@ var countDown = function(time, type){
     if(time <= 0){
       clearInterval(currentIntervalId);
       makeNoise();
+      if(type === "Session"){
+        countDown(5 * 60, "Break")
+      }else if(type === "Break"){
+        countDown(25 * 60, "Session")
+      }
+
     }
   }, 1000)
   
@@ -55,8 +61,8 @@ var makeNoise = function () {
 
 }
 
-var defaultTime = 10;
-var defaultMode = "session";
+var defaultTime = 25 * 60;
+var defaultMode = "Session";
 var timerActive = true;
 
 $(document).ready(function(){
