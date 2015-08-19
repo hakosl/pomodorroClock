@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
 	<link href="style.css" rel="stylesheet"/>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -8,14 +9,14 @@
 	<title></title>
 </head>
 <body>
-<div class="row container-fluid text-center">
-	<div class="col-xs-4"><button class="text-center btn btn-standard pause-start-button" href="#" onclick="pauseAndStopInterval();">pause</button></div>
-	<div class="col-xs-4"><button class="text-center btn btn-standard" onclick="startInterval();">start</button></div>
-	<div class="col-xs-4"><button class="text-center btn btn-standard pause-start-button" href="#" onclick="resetInterval();">reset</button></div>
-</div>
-<div class="text-center round-container">
-	<p class="time">25:00</p>
-	<p class="mode">session</p>
+<div class="containing-div text-center">
+	<div class="row container-fluid text-center">
+		<div class="col-xs-4"><button class="text-center btn btn-standard pause-start-button" href="#" onclick="pauseAndStopInterval();">pause</button></div>
+		<div class="col-xs-4"><button class="text-center btn btn-standard" onclick="startInterval();">start</button></div>
+		<div class="col-xs-4"><button class="text-center btn btn-standard pause-start-button" href="#" onclick="resetInterval();">reset</button></div>
+	</div>
+		<p class="time" style="">25:00</p>
+		<p class="mode">session</p>
 </div>
 </body>
 </html>
